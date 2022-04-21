@@ -1,0 +1,548 @@
+/* General Rules */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trip Sans", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+h2 {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+}
+h5 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Header */
+header nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+#menu-burger {
+  display: none;
+}
+#logo {
+  width: 200px;
+}
+#hidden-magnifying {
+  display: none;
+}
+#divSearch {
+  border: solid #e0e0e0 2px;
+  background-color: white;
+  height: 40px;
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#search {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+.divsHeader {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+
+  /* width: 55px; */
+}
+
+.divsHeader:hover {
+  border-radius: 15px;
+  background-color: #e0e0e0;
+}
+
+header button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  height: 50%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header button:hover {
+  opacity: 0.7;
+}
+
+#leftHeader {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#rightHeader {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#rightHeader i {
+  margin-right: 10px;
+}
+
+/* Main */
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+#bandeau {
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+  margin-top: 20px;
+}
+.sous-bandeau {
+  border: solid black 1px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  height: 80%;
+  color: black;
+  text-decoration: none;
+  flex: 1;
+}
+.sous-bandeau div {
+  width: 70%;
+}
+
+.sous-bandeau:hover {
+  background-color: black;
+  color: white;
+}
+
+.hidden-nav {
+  display: none;
+}
+
+#pictures {
+  margin: 20px 0;
+  display: flex;
+  height: 435px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#picture-left {
+  flex: 3;
+  margin: 2px;
+}
+#picture-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#pictures-right {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.pictures-overlap {
+  height: 49.3%;
+  margin: 2px 0;
+}
+.pictures-overlap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#picture-left:hover {
+  opacity: 0.7;
+}
+.pictures-overlap:hover {
+  opacity: 0.7;
+}
+
+#arborescence a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+#arborescence nav {
+  display: flex;
+}
+
+#sectionInformation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#sectionInformation > div:first-child > p {
+  margin-top: 10px;
+  font-size: 19px;
+  line-height: 23px;
+  font-family: Georgia, sans-serif;
+}
+
+.sectionInformationBlock {
+  /* flex: 1; */
+  /* padding: 40px; */
+  width: 43%;
+}
+
+#sectionInformation div:nth-child(2) p {
+  padding: 15px;
+}
+
+.sectionInformationBlock button {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  width: 40%;
+  padding: 10px;
+}
+
+.sectionInformationBlock button a {
+  color: white;
+  text-decoration: none;
+}
+
+.sectionInformationBlock button:hover {
+  opacity: 0.9;
+}
+
+.sectionInformationBlock div img {
+  object-fit: cover;
+  width: 100%;
+}
+.sectionInformationBlock div:first-child {
+  border: solid red 1px;
+  background-color: #fe5d5d;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#rightInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 30%;
+}
+
+.rightInformationDivImg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Caroussel */
+
+#caroussel {
+  margin-top: -30px;
+}
+
+.caroussel-container {
+  display: flex;
+  margin-top: 60px;
+}
+.text-caroussel {
+  flex: 1;
+}
+.text-caroussel p {
+  padding: 10px;
+}
+.text-caroussel a {
+  color: black;
+  padding: 10px;
+}
+.image-container {
+  flex: 3;
+  display: flex;
+  overflow-x: hidden;
+  overflow-x: scroll;
+}
+.item-caroussel {
+  margin: 0 10px;
+  width: 31%;
+  flex-shrink: 0;
+}
+.image-caroussel {
+  height: 200px;
+  position: relative;
+}
+
+.image-caroussel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rates {
+  height: 20px;
+  display: flex;
+  margin-top: 10px;
+  /* justify-content: space-between; */
+}
+.rates div:first-child {
+  display: flex;
+}
+.ratings {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  margin: 5px 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TripAdvisorOwl {
+  height: 40px;
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-logo {
+  background-color: #34e0a1;
+}
+
+.TripAdvisorOwl p {
+  font-size: 10px;
+}
+.TripAdvisorOwl img {
+  width: 90%;
+  height: 90%;
+}
+
+.yellow-logo {
+  background-color: #f2b203;
+}
+
+.item-caroussel a {
+  text-decoration: none;
+  color: black;
+}
+.item-caroussel:hover {
+  opacity: 0.7;
+}
+.item-caroussel:hover a {
+  text-decoration: underline;
+}
+
+.caroussel-container ::-webkit-scrollbar {
+  display: none;
+}
+.michelin {
+  background-color: #faf1ed;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  width: 28%;
+  padding: 5px;
+  color: #bd2333;
+  border-radius: 9px;
+  margin: 10px 0;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1184px) {
+  #bandeau {
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .sous-bandeau {
+    height: 60%;
+
+    flex: 20%;
+  }
+  .hidden-nav {
+    display: flex;
+  }
+  #pictures {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #rightHeader {
+    justify-content: end;
+  }
+  .divsHeader p {
+    display: none;
+  }
+  #leftHeader {
+    width: 70%;
+  }
+
+  #rightInformation {
+    display: none;
+  }
+  .sectionInformationBlock {
+    width: 100%;
+  }
+  .item-caroussel {
+    margin: 0 2px;
+    width: 38%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  h1 {
+    margin-left: 20px;
+  }
+  h3 {
+    margin-left: 5px;
+  }
+  h4 {
+    margin: 25px 0;
+    padding: 0;
+  }
+  #nav-header {
+    height: 50px;
+  }
+  #leftHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #logo {
+    height: 30px;
+  }
+
+  #menu-burger {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    margin: 20px;
+  }
+  #hidden-magnifying {
+    display: flex;
+    margin: 20px;
+  }
+  #divSearch {
+    display: none;
+  }
+  #rightHeader {
+    display: none;
+  }
+
+  #bandeau {
+    /* display: flex; */
+    flex-wrap: nowrap;
+    /* overflow-x: hidden; */
+    overflow-x: scroll;
+    width: 100%;
+    margin: 0 20px;
+    margin-bottom: -30px;
+  }
+  #bandeau::-webkit-scrollbar {
+    display: none;
+  }
+  .sous-bandeau div {
+    width: 100px;
+  }
+  #pictures-right {
+    display: none;
+  }
+  #pictures {
+    width: 100%;
+  }
+  .container #picture-left {
+    height: 280px;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  #picture-left img {
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  #arborescence {
+    display: none;
+  }
+  #sectionInformation {
+    margin-top: -35px;
+  }
+  .caroussel-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .text-caroussel p,
+  .text-caroussel a {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .text-caroussel {
+    margin-bottom: 40px;
+  }
+}
