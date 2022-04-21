@@ -499,7 +499,6 @@ header button:hover {
     flex-wrap: nowrap;
     /* overflow-x: hidden; */
     overflow-x: scroll;
-    width: 100%;
     margin: 0 20px;
     margin-bottom: -30px;
   }
@@ -507,7 +506,7 @@ header button:hover {
     display: none;
   }
   .sous-bandeau div {
-    width: 100px;
+    flex: 1;
   }
   #pictures-right {
     display: none;
